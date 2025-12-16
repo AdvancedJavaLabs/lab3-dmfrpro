@@ -1,0 +1,245 @@
+Starting cluster...
+Setting up HDFS...
+Deleted /sales_input
+Uploaded files:
+Found 8 items
+-rw-r--r--   1 hadoop supergroup    3406784 2025-12-16 06:21 /sales_input/0.csv
+-rw-r--r--   1 hadoop supergroup    7078520 2025-12-16 06:21 /sales_input/1.csv
+-rw-r--r--   1 hadoop supergroup   10737171 2025-12-16 06:21 /sales_input/2.csv
+-rw-r--r--   1 hadoop supergroup   14530705 2025-12-16 06:21 /sales_input/3.csv
+-rw-r--r--   1 hadoop supergroup   18299520 2025-12-16 06:21 /sales_input/4.csv
+-rw-r--r--   1 hadoop supergroup   22053240 2025-12-16 06:21 /sales_input/5.csv
+-rw-r--r--   1 hadoop supergroup   25790880 2025-12-16 06:21 /sales_input/6.csv
+-rw-r--r--   1 hadoop supergroup   29524261 2025-12-16 06:21 /sales_input/7.csv
+Compiling...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.ifmo.app:lab3-dmfrpro >----------------------
+[INFO] Building lab3-dmfrpro 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ lab3-dmfrpro ---
+[INFO] Deleting /home/dmfrpro/Assignments/parallel/lab3-dmfrpro/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ lab3-dmfrpro ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/dmfrpro/Assignments/parallel/lab3-dmfrpro/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ lab3-dmfrpro ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 6 source files to /home/dmfrpro/Assignments/parallel/lab3-dmfrpro/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ lab3-dmfrpro ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/dmfrpro/Assignments/parallel/lab3-dmfrpro/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ lab3-dmfrpro ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ lab3-dmfrpro ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ lab3-dmfrpro ---
+[INFO] Building jar: /home/dmfrpro/Assignments/parallel/lab3-dmfrpro/target/lab3-dmfrpro-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- assembly:3.7.1:single (default) @ lab3-dmfrpro ---
+[INFO] Building jar: /home/dmfrpro/Assignments/parallel/lab3-dmfrpro/target/lab3-dmfrpro-1.0-SNAPSHOT-jar-with-dependencies.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.772 s
+[INFO] Finished at: 2025-12-16T09:21:36+03:00
+[INFO] ------------------------------------------------------------------------
+Running job...
+Cleaning output directories...
+
+=== Starting Job 1: Calculate revenue per category ===
+2025-12-16 06:21:42 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.4:8032
+2025-12-16 06:21:42 WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2025-12-16 06:21:42 INFO  JobResourceUploader:907 - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1765865564182_0003
+2025-12-16 06:21:43 INFO  FileInputFormat:302 - Total input files to process : 8
+2025-12-16 06:21:44 INFO  JobSubmitter:203 - number of splits:8
+2025-12-16 06:21:44 INFO  JobSubmitter:299 - Submitting tokens for job: job_1765865564182_0003
+2025-12-16 06:21:44 INFO  JobSubmitter:300 - Executing with tokens: []
+2025-12-16 06:21:44 INFO  Configuration:2898 - resource-types.xml not found
+2025-12-16 06:21:44 INFO  ResourceUtils:476 - Unable to find 'resource-types.xml'.
+2025-12-16 06:21:44 INFO  YarnClientImpl:356 - Submitted application application_1765865564182_0003
+2025-12-16 06:21:44 INFO  Job:1681 - The url to track the job: http://resourcemanager:8088/proxy/application_1765865564182_0003/
+2025-12-16 06:21:44 INFO  Job:1726 - Running job: job_1765865564182_0003
+2025-12-16 06:21:52 INFO  Job:1747 - Job job_1765865564182_0003 running in uber mode : false
+2025-12-16 06:21:52 INFO  Job:1754 -  map 0% reduce 0%
+2025-12-16 06:22:01 INFO  Job:1754 -  map 25% reduce 0%
+2025-12-16 06:22:02 INFO  Job:1754 -  map 50% reduce 0%
+2025-12-16 06:22:03 INFO  Job:1754 -  map 75% reduce 0%
+2025-12-16 06:22:05 INFO  Job:1754 -  map 100% reduce 0%
+2025-12-16 06:22:08 INFO  Job:1754 -  map 100% reduce 33%
+2025-12-16 06:22:09 INFO  Job:1754 -  map 100% reduce 100%
+2025-12-16 06:22:10 INFO  Job:1765 - Job job_1765865564182_0003 completed successfully
+2025-12-16 06:22:10 INFO  Job:1772 - Counters: 56
+	File System Counters
+		FILE: Number of bytes read=109453185
+		FILE: Number of bytes written=222314427
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=131421865
+		HDFS: Number of bytes written=668
+		HDFS: Number of read operations=39
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=8
+		Launched reduce tasks=3
+		Rack-local map tasks=8
+		Total time spent by all maps in occupied slots (ms)=30748
+		Total time spent by all reduces in occupied slots (ms)=10511
+		Total time spent by all map tasks (ms)=30748
+		Total time spent by all reduce tasks (ms)=10511
+		Total vcore-milliseconds taken by all map tasks=30748
+		Total vcore-milliseconds taken by all reduce tasks=10511
+		Total megabyte-milliseconds taken by all map tasks=31485952
+		Total megabyte-milliseconds taken by all reduce tasks=10763264
+	Map-Reduce Framework
+		Map input records=3600008
+		Map output records=3600000
+		Map output bytes=102253167
+		Map output materialized bytes=109453311
+		Input split bytes=784
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=20
+		Reduce shuffle bytes=109453311
+		Reduce input records=3600000
+		Reduce output records=20
+		Spilled Records=7200000
+		Shuffled Maps =24
+		Failed Shuffles=0
+		Merged Map outputs=24
+		GC time elapsed (ms)=1669
+		CPU time spent (ms)=39030
+		Physical memory (bytes) snapshot=5830852608
+		Virtual memory (bytes) snapshot=29852155904
+		Total committed heap usage (bytes)=7422345216
+		Peak Map Physical memory (bytes)=637300736
+		Peak Map Virtual memory (bytes)=2714058752
+		Peak Reduce Physical memory (bytes)=418201600
+		Peak Reduce Virtual memory (bytes)=2722541568
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=131421081
+	File Output Format Counters 
+		Bytes Written=668
+	org.ifmo.app.SalesMapper$Counter
+		HEADER_SKIPPED=8
+
+=== Starting Job 2: Sort by revenue (descending) ===
+2025-12-16 06:22:10 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.4:8032
+2025-12-16 06:22:10 WARN  JobResourceUploader:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2025-12-16 06:22:10 INFO  JobResourceUploader:907 - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hadoop/.staging/job_1765865564182_0004
+2025-12-16 06:22:10 INFO  FileInputFormat:302 - Total input files to process : 3
+2025-12-16 06:22:11 INFO  JobSubmitter:203 - number of splits:3
+2025-12-16 06:22:11 INFO  JobSubmitter:299 - Submitting tokens for job: job_1765865564182_0004
+2025-12-16 06:22:11 INFO  JobSubmitter:300 - Executing with tokens: []
+2025-12-16 06:22:12 INFO  YarnClientImpl:356 - Submitted application application_1765865564182_0004
+2025-12-16 06:22:12 INFO  Job:1681 - The url to track the job: http://resourcemanager:8088/proxy/application_1765865564182_0004/
+2025-12-16 06:22:12 INFO  Job:1726 - Running job: job_1765865564182_0004
+2025-12-16 06:22:23 INFO  Job:1747 - Job job_1765865564182_0004 running in uber mode : false
+2025-12-16 06:22:23 INFO  Job:1754 -  map 0% reduce 0%
+2025-12-16 06:22:30 INFO  Job:1754 -  map 100% reduce 0%
+2025-12-16 06:22:35 INFO  Job:1754 -  map 100% reduce 100%
+2025-12-16 06:22:35 INFO  Job:1765 - Job job_1765865564182_0004 completed successfully
+2025-12-16 06:22:35 INFO  Job:1772 - Counters: 54
+	File System Counters
+		FILE: Number of bytes read=594
+		FILE: Number of bytes written=1241205
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=980
+		HDFS: Number of bytes written=668
+		HDFS: Number of read operations=14
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=3
+		Launched reduce tasks=1
+		Rack-local map tasks=3
+		Total time spent by all maps in occupied slots (ms)=9841
+		Total time spent by all reduces in occupied slots (ms)=2248
+		Total time spent by all map tasks (ms)=9841
+		Total time spent by all reduce tasks (ms)=2248
+		Total vcore-milliseconds taken by all map tasks=9841
+		Total vcore-milliseconds taken by all reduce tasks=2248
+		Total megabyte-milliseconds taken by all map tasks=10077184
+		Total megabyte-milliseconds taken by all reduce tasks=2301952
+	Map-Reduce Framework
+		Map input records=20
+		Map output records=20
+		Map output bytes=548
+		Map output materialized bytes=606
+		Input split bytes=312
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=20
+		Reduce shuffle bytes=606
+		Reduce input records=20
+		Reduce output records=20
+		Spilled Records=40
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=263
+		CPU time spent (ms)=2000
+		Physical memory (bytes) snapshot=1200467968
+		Virtual memory (bytes) snapshot=10841509888
+		Total committed heap usage (bytes)=1513095168
+		Peak Map Physical memory (bytes)=296411136
+		Peak Map Virtual memory (bytes)=2709536768
+		Peak Reduce Physical memory (bytes)=320827392
+		Peak Reduce Virtual memory (bytes)=2714923008
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=668
+	File Output Format Counters 
+		Bytes Written=668
+
+=== Job Complete ===
+
+=== RESULTS ===
+clothing	4560302171.99	911487
+video games	4560108307.50	913326
+baby products	4541435362.25	907186
+beauty products	4533874327.85	906417
+gardening tools	4531880837.74	905841
+automotive	4529861310.74	904962
+music instruments	4512294466.14	902389
+furniture	4503986763.16	900244
+electronics	4497526631.04	903266
+pet supplies	4488741730.38	896724
+stationery	4481794912.39	898265
+home appliances	4473888361.73	895815
+sports equipment	4469387812.34	894287
+groceries	4466915230.97	895470
+footwear	4465574983.36	894424
+jewelry	4463823670.79	893980
+office equipment	4463564947.38	892370
+toys	4462453654.12	892741
+books	4457620825.95	890948
+health & wellness	4454082892.49	890475
